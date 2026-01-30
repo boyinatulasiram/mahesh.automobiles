@@ -7,6 +7,9 @@ import shivamSomaniImg from '../assets/shivam_somani.jpg';
 import missionImg from '../assets/aboutus_mission.png';
 import whoWeAreImg from '../assets/about_who_we_are.jpg';
 import visionImg from '../assets/about_vision.jpg';
+import pushpendraJoshiImg from '../assets/pushpendra_joshi.jpeg';
+import rohitMewaraImg from '../assets/rohit_mewara.jpeg';
+import gopalSenImg from '../assets/gopal_sen.jpeg';
 
 const About = () => {
     return (
@@ -82,7 +85,7 @@ const About = () => {
                         <div className="mx-auto bg-warning" style={{ height: '3px', width: '80px' }}></div>
                         <p className="mt-3 text-muted">The visionaries driving our success.</p>
                     </div>
-
+                    {/* CEO section */}
                     <Row className="justify-content-center g-5">
                         <Col md={4} className="text-center animate-fade-in-up delay-100">
                             <div className="bg-white p-4 rounded shadow-sm card-hover h-100">
@@ -93,12 +96,31 @@ const About = () => {
                                 <h6 className="text-accent mb-3">CEO</h6>
                             </div>
                         </Col>
+                    </Row>
+                    <Row className="justify-content-center g-5 mt-2">
                         <Col md={4} className="text-center animate-fade-in-up delay-200">
                             <div className="bg-white p-4 rounded shadow-sm card-hover h-100">
                                 <div className="mb-4">
-                                    <Image src={shivamSomaniImg} roundedCircle thumbnail className="shadow-sm" style={{ width: '180px', height: '180px', objectFit: 'cover' }} />
+                                    <Image src={pushpendraJoshiImg} roundedCircle thumbnail className="shadow-sm" style={{ width: '180px', height: '180px', objectFit: 'cover' }} />
                                 </div>
-                                <h4 className="fw-bold text-primary-custom">Shivam Somani</h4>
+                                <h4 className="fw-bold text-primary-custom">Pushpendra Joshi</h4>
+                                <h6 className="text-accent mb-3">Manager</h6>
+                            </div>
+                        </Col>
+                        <Col md={4} className="text-center animate-fade-in-up delay-200">
+                            <div className="bg-white p-4 rounded shadow-sm card-hover h-100">
+                                <div className="mb-4">
+                                    <Image src={rohitMewaraImg} roundedCircle thumbnail className="shadow-sm" style={{ width: '180px', height: '180px', objectFit: 'cover' }} />
+                                </div>
+                                <h4 className="fw-bold text-primary-custom">Rohit Mewara</h4>
+                                <h6 className="text-accent mb-3">Manager</h6>
+                            </div>
+                        </Col> <Col md={4} className="text-center animate-fade-in-up delay-200">
+                            <div className="bg-white p-4 rounded shadow-sm card-hover h-100">
+                                <div className="mb-4">
+                                    <Image src={gopalSenImg} roundedCircle thumbnail className="shadow-sm" style={{ width: '180px', height: '180px', objectFit: 'cover' }} />
+                                </div>
+                                <h4 className="fw-bold text-primary-custom">Gopal Sen</h4>
                                 <h6 className="text-accent mb-3">Manager</h6>
                             </div>
                         </Col>
