@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { useLayoutEffect } from 'react';
 import Layout from './components/Layout';
 import Home from './pages/Home';
@@ -45,45 +46,47 @@ const ScrollToTop = () => {
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/clients" element={<Clients />} />
-          <Route path="/contact" element={<Contact />} />
+    <HelmetProvider>
+      <Router>
+        <ScrollToTop />
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/clients" element={<Clients />} />
+            <Route path="/contact" element={<Contact />} />
 
-          {/* Prime Products Routes */}
-          <Route path="/hose-shield" element={<HoseShield />} />
-          <Route path="/mining-ventilation-system" element={<MiningVentilationSystem />} />
-          <Route path="/tortek" element={<Tortek />} />
-          <Route path="/safeplast" element={<Safeplast />} />
-          <Route path="/ram-industries" element={<RamIndustries />} />
-          <Route path="/fire-product" element={<FireProduct />} />
-          <Route path="/universal-electrode" element={<UniversalElectrode />} />
-          <Route path="/deutz" element={<Deutz />} />
-          <Route path="/vehicle-seat" element={<VehicleSeat />} />
-          <Route path="/spal" element={<Spal />} />
-          <Route path="/window-glass" element={<WindowGlass />} />
+            {/* Prime Products Routes */}
+            <Route path="/hose-shield" element={<HoseShield />} />
+            <Route path="/mining-ventilation-system" element={<MiningVentilationSystem />} />
+            <Route path="/tortek" element={<Tortek />} />
+            <Route path="/safeplast" element={<Safeplast />} />
+            <Route path="/ram-industries" element={<RamIndustries />} />
+            <Route path="/fire-product" element={<FireProduct />} />
+            <Route path="/universal-electrode" element={<UniversalElectrode />} />
+            <Route path="/deutz" element={<Deutz />} />
+            <Route path="/vehicle-seat" element={<VehicleSeat />} />
+            <Route path="/spal" element={<Spal />} />
+            <Route path="/window-glass" element={<WindowGlass />} />
 
-          {/* Other Products Routes */}
-          <Route path="/underground-mining-spare" element={<UndergroundMiningSpare />} />
-          <Route path="/roof-support-system" element={<RoofSupportSystem />} />
-          <Route path="/development-work" element={<DevelopmentWork />} />
-          <Route path="/tools-hardware" element={<ToolsHardware />} />
-          <Route path="/safety-products" element={<SafetyProducts />} />
-          <Route path="/welding-accessories" element={<WeldingAccessories />} />
-          <Route path="/repairing-works" element={<RepairingWorks />} />
-          <Route path="/blasting-cable" element={<BlastingCable />} />
-          <Route path="/hdpe-pipe" element={<HdpePipe />} />
-          <Route path="/unbrako" element={<Unbrako />} />
-          <Route path="/batteries" element={<Batteries />} />
-          <Route path="/rubber-spares" element={<RubberSpares />} />
-        </Routes>
-      </Layout>
-    </Router>
+            {/* Other Products Routes */}
+            <Route path="/underground-mining-spare" element={<UndergroundMiningSpare />} />
+            <Route path="/roof-support-system" element={<RoofSupportSystem />} />
+            <Route path="/development-work" element={<DevelopmentWork />} />
+            <Route path="/tools-hardware" element={<ToolsHardware />} />
+            <Route path="/safety-products" element={<SafetyProducts />} />
+            <Route path="/welding-accessories" element={<WeldingAccessories />} />
+            <Route path="/repairing-works" element={<RepairingWorks />} />
+            <Route path="/blasting-cable" element={<BlastingCable />} />
+            <Route path="/hdpe-pipe" element={<HdpePipe />} />
+            <Route path="/unbrako" element={<Unbrako />} />
+            <Route path="/batteries" element={<Batteries />} />
+            <Route path="/rubber-spares" element={<RubberSpares />} />
+          </Routes>
+        </Layout>
+      </Router>
+    </HelmetProvider>
   );
 }
 

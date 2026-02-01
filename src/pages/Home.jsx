@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { FaCogs, FaUsers, FaPhoneAlt, FaArrowRight } from 'react-icons/fa';
 import { FadeContent, CircularText } from '../components/TextAnimations';
 import MiningBackground from '../components/MiningBackground';
+import SEO from '../components/SEO';
 
 import heroBg from '../assets/hero_bg_mining.jpg';
 import hoseShieldImg from '../assets/products/hose_shield.jpg';
@@ -13,6 +14,11 @@ import tortekImg from '../assets/products/tortek.png';
 const Home = () => {
     return (
         <>
+            <SEO
+                title="Home"
+                description="Mahesh Automobiles - Leading supplier of mining safety equipment, ventilation systems, and industrial spares in Rajasthan. Authorized dealers for various premium brands."
+                keywords={["Mining Equipment", "Ventilation Systems", "Safety Gear", "Rajasthan Mining"]}
+            />
             {/* Hero Section */}
             <div className="hero-section mb-5 position-relative overflow-hidden" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${heroBg})` }}>
                 <MiningBackground particleCount={30} />

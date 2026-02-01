@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 // Import local assets
 import productsHeroBg from '../assets/products_hero_bg.jpg';
@@ -57,7 +58,7 @@ const Products = () => {
         { id: 6, title: 'RAM GEAR PRIVATE LTD', description: 'Complete Drive Technology', img: ramGearImg, link: '/ram-industries' },
         { id: 9, title: 'Samoa Spain', description: 'Complete Lubrication Equipment.', img: samoaImg, link: 'http://samoaindustrial.com/ww/en/Product/SEARCH', external: true },
         { id: 16, title: 'MINING VEHICLE WINDOW GLASS', description: 'ALL TYPES OF  TUFFEND AND LAMINATED WINDOWS GLASS', img: windowGlassImg, link: '/window-glass' },
-         { id: 17, title: 'Underground Mining Spare And Consumable Parts', description: 'Complete underground mining equipment spare parts', img: undergroundMiningImg, link: '/underground-mining-spare' },
+        { id: 17, title: 'Underground Mining Spare And Consumable Parts', description: 'Complete underground mining equipment spare parts', img: undergroundMiningImg, link: '/underground-mining-spare' },
         { id: 18, title: 'Roof Support System', description: 'complete underground roof support system.', img: roofSupportImg, link: '/roof-support-system' },
         { id: 22, title: 'Development Work', description: 'Complete electrical and mechanical development', img: developmentWorkImg, link: '/development-work' },
         { id: 23, title: 'Repairing Works', description: 'Complete dewatering pump repair, electric motor repair, and rewinding work', img: repairingWorksImg, link: '/repairing-works' },
@@ -69,6 +70,11 @@ const Products = () => {
 
     return (
         <>
+            <SEO
+                title="Our Products"
+                description="Explore our wide range of products including mining ventilation systems, hose shields, wire & cables, safety products, and more."
+                keywords={["Mining Products", "Industrial Spares", "Hose Shield", "Ventilation", "Wire and Cables"]}
+            />
             <div className="text-white py-5 text-center" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${productsHeroBg})`, backgroundSize: 'cover', backgroundPosition: 'center', padding: '100px 0' }}>
                 <Container>
                     <h1 className="fw-bold display-4">Our Products</h1>
@@ -105,7 +111,7 @@ const Products = () => {
                         </Col>
                     ))}
                 </Row>
-            </Container>         
+            </Container>
         </>
     );
 };

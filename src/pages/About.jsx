@@ -10,10 +10,16 @@ import visionImg from '../assets/about_vision.jpg';
 import pushpendraJoshiImg from '../assets/pushpendra_joshi.jpeg';
 import rohitMewaraImg from '../assets/rohit_mewara.jpeg';
 import gopalSenImg from '../assets/gopal_sen.jpeg';
+import SEO from '../components/SEO';
 
 const About = () => {
     return (
         <>
+            <SEO
+                title="About Us"
+                description="Learn about Mahesh Automobiles, a trusted name in the mining industry for over 50 years. We provide quality mining equipment and safety solutions."
+                keywords={["About Mahesh Automobiles", "Mining Industry Experience", "Our Mission", "Our Vision"]}
+            />
             {/* Hero / Intro Section */}
             <div className="bg-light section-padding">
                 <Container>

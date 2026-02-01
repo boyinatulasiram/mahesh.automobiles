@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { Container, Row, Col, Form, Button, Card, Alert } from 'react-bootstrap';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaWhatsapp, FaUserTie, FaUser } from 'react-icons/fa';
 import contactBg from '../assets/contact_bg.jpg';
+import SEO from '../components/SEO';
 
 const Contact = () => {
     const form = useRef();
@@ -25,6 +26,11 @@ const Contact = () => {
 
     return (
         <>
+            <SEO
+                title="Contact Us"
+                description="Get in touch with Mahesh Automobiles. Head office in Gulabpura, Bhilwara. Contact us for mining and automobile solutions."
+                keywords={["Contact Mahesh Automobiles", "Bhilwara Office", "Customer Support", "Inquiry"]}
+            />
             <div className="text-white py-5 text-center" style={{
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${contactBg})`,
                 backgroundSize: 'cover',
@@ -139,22 +145,22 @@ const Contact = () => {
 
                 {/* Map */}
                 <div className="mt-5 pt-4">
-                <h3 className="mb-4">Find Us Here</h3>
+                    <h3 className="mb-4">Find Us Here</h3>
 
-                <div className="ratio ratio-21x9 rounded overflow-hidden shadow">
-                    <iframe
-                    src="https://www.google.com/maps?q=Mahesh+Automobiles,+Banwari+Chouraha,+Gulabpura,+Bhilwara,+Rajasthan+311021&output=embed"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Mahesh Automobiles Location"
-                    ></iframe>
-                </div>
+                    <div className="ratio ratio-21x9 rounded overflow-hidden shadow">
+                        <iframe
+                            src="https://www.google.com/maps?q=Mahesh+Automobiles,+Banwari+Chouraha,+Gulabpura,+Bhilwara,+Rajasthan+311021&output=embed"
+                            style={{ border: 0 }}
+                            allowFullScreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Mahesh Automobiles Location"
+                        ></iframe>
+                    </div>
 
-                <p className="text-muted mt-3">
-                    📍 Mahesh Automobiles, Banwari Chouraha, Gulabpura, Bhilwara – 311021, Rajasthan, India
-                </p>
+                    <p className="text-muted mt-3">
+                        📍 Mahesh Automobiles, Banwari Chouraha, Gulabpura, Bhilwara – 311021, Rajasthan, India
+                    </p>
                 </div>
 
             </Container>
