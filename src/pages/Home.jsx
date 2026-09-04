@@ -51,7 +51,7 @@ const Home = () => {
                             </FadeContent>
                             <FadeContent blur={true} duration={1.2} delay={0.2}>
                                 <p className="lead mb-5 fs-4" style={{ maxWidth: '800px', margin: '0 auto' }}>
-                                    End-to-end mining equipment and safety solutions engineered for performance, reliability, and protection.
+                                    Mining equipment, HEMM parts and safety solutions for mining and industrial applications in Gulabpura, Bhilwara, Rajasthan.
                                 </p>
                             </FadeContent>
                             <FadeContent blur={true} duration={1} delay={0.4}>
