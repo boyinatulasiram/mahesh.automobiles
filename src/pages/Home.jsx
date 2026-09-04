@@ -81,7 +81,7 @@ const Home = () => {
                     <Col md={4} className="animate-fade-in-up delay-100">
                         <Link to="/hose-shield">
                             <Card className="h-100 card-hover border-0 shadow-sm">
-                                <Card.Img variant="top" src={hoseShieldImg} style={{ height: '220px', objectFit: 'contain', width: 'auto', margin: '0 auto', display: 'block' }} />
+                                <Card.Img variant="top" src={hoseShieldImg} alt="Hose Shield" style={{ height: '220px', objectFit: 'contain', width: 'auto', margin: '0 auto', display: 'block' }} />
                                 <Card.Body className="text-center">
                                     <Card.Title className="fw-bold text-dark">Hose Shield</Card.Title>
                                     <Card.Text className="text-muted">
@@ -97,7 +97,7 @@ const Home = () => {
                     <Col md={4} className="animate-fade-in-up delay-200">
                         <Link to="/tools-hardware">
                             <Card className="h-100 card-hover border-0 shadow-sm">
-                                <Card.Img variant="top" src={toolsHardwareImg} style={{ height: '220px', objectFit: 'contain', width: 'auto', margin: '0 auto', display: 'block' }} />
+                                <Card.Img variant="top" src={toolsHardwareImg} alt="Tools and Hardware" style={{ height: '220px', objectFit: 'contain', width: 'auto', margin: '0 auto', display: 'block' }} />
                                 <Card.Body className="text-center">
                                     <Card.Title className="fw-bold text-dark">Tools and Hardware</Card.Title>
                                     <Card.Text className="text-muted">
@@ -113,7 +113,7 @@ const Home = () => {
                     <Col md={4} className="animate-fade-in-up delay-300">
                         <Link to="/tortek">
                             <Card className="h-100 card-hover border-0 shadow-sm">
-                                <Card.Img variant="top" src={tortekImg} style={{ height: '220px', objectFit: 'contain', width: 'auto', margin: '0 auto', display: 'block' }} />
+                                <Card.Img variant="top" src={tortekImg} alt="Tortek" style={{ height: '220px', objectFit: 'contain', width: 'auto', margin: '0 auto', display: 'block' }} />
                                 <Card.Body className="text-center">
                                     <Card.Title className="fw-bold text-dark">Tortek</Card.Title>
                                     <Card.Text className="text-muted">

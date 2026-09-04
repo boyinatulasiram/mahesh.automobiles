@@ -103,7 +103,7 @@ const Products = () => {
                         <Col md={4} key={product.id}>
                             <Card className="h-100 card-hover shadow-sm overflow-hidden">
                                 <div className="position-relative">
-                                    <Card.Img variant="top" src={product.img} style={{ height: '250px', objectFit: 'contain', width: 'auto', margin: '0 auto', display: 'block' }} />
+                                    <Card.Img variant="top" src={product.img} alt={product.title} style={{ height: '250px', objectFit: 'contain', width: 'auto', margin: '0 auto', display: 'block' }} />
                                 </div>
                                 <Card.Body>
                                     <Card.Title className="fw-bold text-truncate" title={product.title}>{product.title}</Card.Title>
