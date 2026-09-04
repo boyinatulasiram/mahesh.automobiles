@@ -14,10 +14,25 @@ import tortekImg from '../assets/products/tortek.png';
 const Home = () => {
     return (
         <>
-            <SEO
-                title="Home"
-                description="Mahesh Automobiles - Leading supplier of mining safety equipment, ventilation systems, and industrial spares in Rajasthan. Authorized dealers for various premium brands."
-                keywords={["Mining Equipment", "Ventilation Systems", "Safety Gear", "Rajasthan Mining"]}
+            
+           <SEO
+                title="Mahesh Automobiles | Auto Parts & Mining Equipment in Gulabpura, Bhilwara"
+                description="Mahesh Automobiles is an auto parts and mining equipment supplier in Gulabpura, Bhilwara, Rajasthan, offering HEMM parts, mining spares, fasteners, power tools, hoses, safety products and industrial equipment."
+                keywords={[
+                    "Mahesh Automobiles",
+                    "Mahesh Automobiles Gulabpura",
+                    "Auto parts shop in Gulabpura",
+                    "Auto parts in Bhilwara",
+                    "Mining equipment in Gulabpura",
+                    "Mining equipment in Bhilwara",
+                    "Mining equipment supplier",
+                    "HEMM parts",
+                    "Mining spares",
+                    "Fasteners",
+                    "Power tools",
+                    "Hose protection",
+                    "Safety equipment"
+                ]}
             />
             {/* Hero Section */}
             <div className="hero-section mb-5 position-relative overflow-hidden" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${heroBg})` }}>

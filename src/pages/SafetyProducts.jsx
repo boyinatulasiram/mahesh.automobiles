@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const SafetyProducts = () => {
     return (
+        <>
         <Container className="section-padding">
             <h1 className="fw-bold mb-4">Safety Products</h1>
             <Row>
@@ -15,6 +16,23 @@ const SafetyProducts = () => {
                 </Col>
             </Row>
         </Container>
+        <SEO
+            title="Safety Products & Equipment | 3M | Mahesh Automobiles"
+            description="Mahesh Automobiles supplies industrial safety products in Gulabpura and Bhilwara, including safety goggles, 3M safety products, beacon lights and other safety equipment."
+            keywords={[
+                "safety products Gulabpura",
+                "safety equipment Gulabpura",
+                "safety equipment Bhilwara",
+                "industrial safety equipment",
+                "safety goggles",
+                "3M safety products",
+                "3M safety equipment",
+                "beacon light",
+                "mining safety equipment",
+                "Mahesh Automobiles"
+            ]}
+        />
+        </>
     );
 };
 

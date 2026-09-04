@@ -71,9 +71,22 @@ const Products = () => {
     return (
         <>
             <SEO
-                title="Our Products"
-                description="Explore our wide range of products including mining ventilation systems, hose shields, wire & cables, safety products, and more."
-                keywords={["Mining Products", "Industrial Spares", "Hose Shield", "Ventilation", "Wire and Cables"]}
+                title="Products | Auto Parts, Mining & Industrial Equipment | Mahesh Automobiles"
+                description="Explore Mahesh Automobiles products including mining equipment, auto parts, HEMM spares, industrial supplies, safety products, tools, hoses, fasteners and more in Gulabpura, Bhilwara."
+                keywords={[
+                    "Mahesh Automobiles products",
+                    "auto parts Gulabpura",
+                    "auto parts Bhilwara",
+                    "mining equipment Gulabpura",
+                    "mining equipment Bhilwara",
+                    "HEMM parts",
+                    "mining spares",
+                    "industrial supplies",
+                    "safety products",
+                    "power tools",
+                    "fasteners",
+                    "hoses"
+                ]}
             />
             <div className="text-white py-5 text-center" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${productsHeroBg})`, backgroundSize: 'cover', backgroundPosition: 'center', padding: '100px 0' }}>
                 <Container>

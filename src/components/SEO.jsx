@@ -1,8 +1,12 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useLocation } from 'react-router-dom';
 
 const SEO = ({ title, description, keywords = [], url }) => {
     // Core keywords to include on every page
+    const location = useLocation();
+    const metaUrl =
+        url || `https://www.maheshautomobile.com${location.pathname}`;
     const coreKeywords = [
         "Mahesh Automobiles",
         "Mahesh Auto",
@@ -22,10 +26,10 @@ const SEO = ({ title, description, keywords = [], url }) => {
     // Combine prop keywords with core keywords and deduplicate
     const allKeywords = [...new Set([...keywords, ...coreKeywords])].join(", ");
 
-    const siteTitle = "Mahesh Automobiles | Authorized Dealer | Mining & Auto Spares";
+    const siteTitle ="Mahesh Automobiles | Auto Parts & Mining Equipment in Gulabpura, Bhilwara";
     const metaTitle = title ? `${title} | Mahesh Automobiles` : siteTitle;
-    const metaDescription = description || "Mahesh Automobiles - Authorized Dealer for Prime Products. Specialized in Mining Ventilation, Hose Shields, Tortek, Safeplast, and Underground Mining Spares in Gulabpura, Bhilwara, Rajasthan.";
-    const metaUrl = url || "https://www.maheshautomobile.com/";
+    const metaDescription = description || "Mahesh Automobiles is an auto parts and mining equipment supplier in Gulabpura, Bhilwara, Rajasthan, offering mining spares, HEMM parts, industrial equipment, fasteners, power tools, hoses and safety products.";
+    //const metaUrl = url || "https://www.maheshautomobile.com/";
     const siteImage = "https://www.maheshautomobile.com/assets/logo.png"; // Assuming a logo exists or we will use a default
 
     // JSON-LD Structured Data for LocalBusiness
@@ -39,7 +43,7 @@ const SEO = ({ title, description, keywords = [], url }) => {
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Banwari Chouraha",
-            "addressLocality": "Gulabpura, Bhilwara",
+            "addressLocality": "Gulabpura",
             "addressRegion": "Rajasthan",
             "postalCode": "311021",
             "addressCountry": "IN"

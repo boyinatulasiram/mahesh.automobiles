@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
+import companyLogo from '../assets/mahesh-automobiles-logo.png';
 
 const CustomNavbar = () => {
     const location = useLocation();
@@ -8,8 +9,13 @@ const CustomNavbar = () => {
     return (
         <Navbar expand="lg" variant="dark" className="navbar-custom sticky-top py-3">
             <Container>
-                <Navbar.Brand as={Link} to="/" className="navbar-brand-custom fs-3">
-                    Mahesh Automobiles
+                <Navbar.Brand as={Link} to="/" className="navbar-brand-custom">
+                    <img
+                        src={companyLogo}
+                        alt="Mahesh Automobiles"
+                        className="navbar-logo"
+                    />
+                    <span className="navbar-brand-name">Mahesh Automobiles</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

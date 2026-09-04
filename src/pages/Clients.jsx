@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import SEO from '../components/SEO';
 
 import hindustanZinc from '../assets/clients/hindustan_zinc.png';
 import client1 from '../assets/clients/sandvik_2.png';
@@ -40,6 +41,23 @@ Voltas Private Limited`, img: client9
     ];
 
     return (
+        <>
+        <SEO
+            title="Our Clients | Mahesh Automobiles | Mining & Industrial Supplier"
+            description="Explore the industries and clients served by Mahesh Automobiles, a supplier of mining equipment, auto parts, industrial spares and safety products in Gulabpura, Bhilwara, Rajasthan."
+            keywords={[
+                "Mahesh Automobiles clients",
+                "Mahesh Automobiles Gulabpura",
+                "Mahesh Automobiles Bhilwara",
+                "mining equipment supplier Bhilwara",
+                "mining equipment supplier Gulabpura",
+                "industrial supplier Bhilwara",
+                "mining spares supplier",
+                "auto parts supplier Bhilwara",
+                "industrial equipment supplier Rajasthan",
+                "mining industry supplier Rajasthan"
+            ]}
+        />
         <div className="clients-page">
             <div className="bg-light py-5 text-center mb-5">
                 <Container>
@@ -100,6 +118,7 @@ Voltas Private Limited`, img: client9
                 `}
             </style>
         </div>
+        </>
     );
 };
 

@@ -3,6 +3,22 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Unbrako = () => {
     return (
+        <>
+        <SEO
+            title="Unbrako Fasteners | Industrial Fasteners | Mahesh Automobiles"
+            description="Mahesh Automobiles supplies Unbrako fasteners and industrial fastening products in Gulabpura, Bhilwara, Rajasthan for mining and industrial applications."
+            keywords={[
+                "Unbrako",
+                "Unbrako fasteners",
+                "Unbrako supplier",
+                "industrial fasteners",
+                "fasteners Gulabpura",
+                "fasteners Bhilwara",
+                "mining fasteners",
+                "industrial fastener supplier",
+                "Mahesh Automobiles"
+            ]}
+        />
         <Container className="section-padding">
             <h1 className="fw-bold mb-4">Unbrako Fastener</h1>
             <Row>
@@ -15,6 +31,7 @@ const Unbrako = () => {
                 </Col>
             </Row>
         </Container>
+        </>
     );
 };
 

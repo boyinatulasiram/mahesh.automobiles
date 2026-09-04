@@ -27,9 +27,22 @@ const Contact = () => {
     return (
         <>
             <SEO
-                title="Contact Us"
-                description="Get in touch with Mahesh Automobiles. Head office in Gulabpura, Bhilwara. Contact us for mining and automobile solutions."
-                keywords={["Contact Mahesh Automobiles", "Bhilwara Office", "Customer Support", "Inquiry"]}
+                title="Contact Mahesh Automobiles | Gulabpura, Bhilwara"
+                description="Contact Mahesh Automobiles in Gulabpura, Bhilwara, Rajasthan for auto parts, mining equipment, HEMM parts, industrial spares, fasteners, power tools, hoses and safety products."
+                keywords={[
+                    "Contact Mahesh Automobiles",
+                    "Mahesh Automobiles Gulabpura",
+                    "Mahesh Automobiles Bhilwara",
+                    "Mahesh Automobiles contact",
+                    "auto parts shop Gulabpura",
+                    "auto parts shop Bhilwara",
+                    "mining equipment Gulabpura",
+                    "mining equipment Bhilwara",
+                    "mining equipment supplier Bhilwara",
+                    "industrial supplier Gulabpura",
+                    "auto parts supplier Bhilwara",
+                    "mining spares supplier Rajasthan"
+                ]}
             />
             <div className="text-white py-5 text-center" style={{
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${contactBg})`,

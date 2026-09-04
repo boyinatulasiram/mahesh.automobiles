@@ -26,10 +26,27 @@ Mining ventilation fans are used to supply adequate oxygen for the workforce and
   ];
 
   return (
+    <>
+    <SEO
+        title="Mining Ventilation Systems | Mining Equipment | Mahesh Automobiles"
+        description="Mahesh Automobiles supplies mining ventilation systems and equipment for mining applications in Gulabpura, Bhilwara, Rajasthan."
+        keywords={[
+            "mining ventilation system",
+            "mining ventilation equipment",
+            "underground mining ventilation",
+            "mining ventilation Gulabpura",
+            "mining ventilation Bhilwara",
+            "mining equipment Gulabpura",
+            "mining equipment Bhilwara",
+            "underground mining equipment",
+            "Mahesh Automobiles"
+        ]}
+    />
     <ProductGallery 
       title="MINING VENTILATION SYSTEMS" 
       products={products} 
     />
+    </>
   );
 };
 

@@ -16,9 +16,21 @@ const About = () => {
     return (
         <>
             <SEO
-                title="About Us"
-                description="Learn about Mahesh Automobiles, a trusted name in the mining industry for over 50 years. We provide quality mining equipment and safety solutions."
-                keywords={["About Mahesh Automobiles", "Mining Industry Experience", "Our Mission", "Our Vision"]}
+                title="About Mahesh Automobiles | Mining & Auto Parts Supplier in Gulabpura"
+                description="Learn about Mahesh Automobiles, an experienced supplier of mining equipment, auto parts, industrial spares and safety products in Gulabpura, Bhilwara, Rajasthan."
+                keywords={[
+                    "About Mahesh Automobiles",
+                    "Mahesh Automobiles Gulabpura",
+                    "Mahesh Automobiles Bhilwara",
+                    "Mining equipment supplier",
+                    "Mining spares",
+                    "Auto parts supplier",
+                    "Industrial spares",
+                    "Safety equipment",
+                    "Gulabpura",
+                    "Bhilwara",
+                    "Rajasthan"
+                ]}
             />
             {/* Hero / Intro Section */}
             <div className="bg-light section-padding">
